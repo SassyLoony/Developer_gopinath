@@ -103,6 +103,35 @@
         gap: 0.5rem;
       }
     }
+    .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  text-align: center;
+}
+.skills-grid div {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+.skills-grid div:hover {
+  transform: translateY(-5px);
+}
+.skills-grid img {
+  height: 40px;
+  margin-bottom: 0.5rem;
+}
+.skills-grid span {
+  display: block;
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-top: 0.2rem;
+}
+body.dark .skills-grid div {
+  background: rgba(255, 255, 255, 0.05);
+}
+
   </style>
 </head>
 <body>
@@ -127,17 +156,28 @@
     <p>I’m a passionate web developer focused on creating interactive, responsive, and modern websites using HTML, CSS, and JavaScript. I love building projects that solve real-world problems.</p>
   </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="card">HTML</div>
-      <div class="card">CSS</div>
-      <div class="card">JavaScript</div>
-      <div class="card">React</div>
-      <div class="card">Git & GitHub</div>
-      <div class="card">Node.js</div>
-    </div>
-  </section>
+ <section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" /><span>HTML5</span></div>
+    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" /><span>CSS3</span></div>
+    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" /><span>JavaScript</span></div>
+    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" /><span>PHP</span></div>
+    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" /><span>MySQL</span></div>
+    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" /><span>Bootstrap</span></div>
+    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" alt="jQuery" /><span>jQuery</span></div>
+    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" /><span>React</span></div>
+    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" /><span>Java</span></div>
+    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Apache" /><span>Apache</span></div>
+    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" /><span>Git</span></div>
+    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="WordPress" /><span>WordPress</span></div>
+    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" /><span>Python</span></div>
+    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" /><span>Django</span></div>
+    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" /><span>React</span></div>
+    <div><img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Microsoft_Office_logo_%282013–2019%29.svg" alt="MS Office" /><span>MS Office</span></div>
+  </div>
+</section>
+
 
   <section id="projects">
     <h2>Projects</h2>
